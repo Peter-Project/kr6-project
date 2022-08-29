@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- Google icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>자율운항지원 서비스</title>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="kr_container service service_2">
+        <div class="section">
+            <div class="contents_1">
+                <div class="point">
+                    <span class="material-symbols-outlined">directions_boat</span>
+                </div>
+                <h3>자율운항지원 서비스</h3>
+                <div class="reset">
+                    <span onclick="loaderShow()" class="material-symbols-outlined">autorenew</span>
+                </div>
+            </div>
+            <div class="contents_box">
+                <div class="left">
+                    <div class="contents_3">
+                        <div class="contents_3__title">자율운항지원 선박 목록</div>
+                        <div class="contents_3__level">
+                            <div class="step"><span class="red"></span><div>위험</div></div>
+                            <div class="step"><span class="green"></span><div>정상</div></div>
+                        </div>
+                        <div class="contents_3__table">
+                            <table class="table">
+                                <colgroup>
+                                    <col width="25%">
+                                    <col width="25%">
+                                    <col width="25%">
+                                    <col width="25%">
+                                </colgroup>
+                                <thead>
+                                    <tr class="table_title">
+                                        <th>충돌위험지수</th>
+                                        <th>선명</th>
+                                        <th>호출부호</th>
+                                        <th>MMSI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="step__check">
+                                            <div class="red"></div>
+                                        </td>
+                                        <td>GRAMPUS ACE</td>
+                                        <td>260031</td>
+                                        <td>441810000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="step__check">
+                                            <div class="red"></div>
+                                        </td>
+                                        <td>GRAMPUS ACE</td>
+                                        <td>260031</td>
+                                        <td>441810000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="step__check">
+                                            <div class="green"></div>
+                                        </td>
+                                        <td>GRAMPUS ACE</td>
+                                        <td>260031</td>
+                                        <td>441810000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="step__check">
+                                            <div class="green"></div>
+                                        </td>
+                                        <td>GRAMPUS ACE</td>
+                                        <td>260031</td>
+                                        <td>441810000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="step__check">
+                                            <div class="green"></div>
+                                        </td>
+                                        <td>GRAMPUS ACE</td>
+                                        <td>260031</td>
+                                        <td>441810000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="step__check">
+                                            <div class="green"></div>
+                                        </td>
+                                        <td>GRAMPUS ACE</td>
+                                        <td>260031</td>
+                                        <td>441810000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="contents_4">
+                        <div class="contents_4__box" id="open4">
+                            <div class="bg_gradient"></div>
+                            <div class="contents_4__box__step">
+                                <div>120척</div>
+                            </div>
+                            <div class="contents_4__box__info">주변선박</div>
+                        </div>
+                        <div class="contents_4__box" id="open5">
+                            <div class="contents_4__box__step_2 location">
+                                E<span class="contents_4__orange">128'26'55</span>
+                                N<span class="contents_4__orange">35'16'37</span>
+                            </div>
+                            <div class="contents_4__box__info">지원선박 위치</div>
+                        </div>
+                        <div class="contents_4__box" id="open6">
+                            <div class="contents_4__box__step_2">
+                                SOG<span class="contents_4__orange">9Kn</span>
+                            </div>
+                            <div class="contents_4__box__info">선박 속도</div>
+                            <div class="contents_4__box__step_2">
+                                COG<span class="contents_4__orange">135</span>
+                            </div>
+                            <div class="contents_4__box__info">선박 침로</div>
+                        </div>
+                        <div class="contents_4__box" id="open7">
+                            <div class="contents_4__box__step">
+                                <div class="contents_4__green">0.1</div>
+                            </div>
+                            <div class="contents_4__box__info">충돌위험지수</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="contents_5">
+                        <div class="contents_5__top">
+                            <div class="contents_5__title"><div>GRAMPUS ACE</div><span class="material-icons">star</span></div>
+                            <div class="contents_5__vessel_info">
+                                <div>MMSI <span>441811000</span></div>
+                                <div>IMO <span>260031</span></div>
+                                <div>CallSign <span>123456</span></div>
+                            </div>
+                            <div class="contents_5__img">
+                                <img src="/KR6/img/vessel.jpeg" alt="선박이미지">
+                            </div>
+                            <div class="contents_5__vessel_info_2">
+                                <div class="material-symbols-outlined">directions_boat</div><span>153</span>
+                                <div class="material-symbols-outlined">directions_boat</div><span>0Kn</span>
+                                <div class="material-symbols-outlined">directions_boat</div><span>Cargo</span>
+                            </div>
+                            <div class="contents_5__vessel_info_2__">
+                                <div>2022-06-30 09:21:51</div>
+                            </div>
+                        </div>
+                        <div class="contents_5__bottom">
+                            <ul class="toggle">
+                                <li class="toggle__menu">
+                                    <a href="#"><span class="material-symbols-outlined">assignment</span>선주/운영사/선사/대리점<span class="material-symbols-outlined">keyboard_control_key</span></a>
+                                    <ul>
+                                        <li>선주국적<span>KR 대한민국</span></li>
+                                        <li>운영자국적<span>KR 대한민국</span></li>
+                                        <li>운영자업체<span>KMA2213 케이티에스해운 주식회사</span></li>
+                                        <li>선사/대리점<span>KMA2213 케이티에스해운 주식회사</span></li>
+                                    </ul>
+                                </li>
+                                <li class="toggle__menu">
+                                    <a href="#"><span class="material-symbols-outlined">waves</span>톤수정보<span class="material-symbols-outlined">keyboard_control_key</span></a>
+                                    <ul>
+                                        <li>총톤수<span>2328</span></li>
+                                        <li>순톤수<span>1148</span></li>
+                                        <li>국제총톤수<span>2682</span></li>
+                                    </ul>
+                                </li>
+                                <li class="toggle__menu">
+                                    <a href="#"><span class="material-symbols-outlined">table_rows</span>선체정보<span class="material-symbols-outlined">keyboard_control_key</span></a>
+                                    <ul>
+                                        <li>총길이<span>92.86m</span></li>
+                                        <li>너비<span>14.1m</span></li>
+                                        <li>만재홀수<span>5.7m</span></li>
+                                        <li>깊이<span>7.2m</span></li>
+                                        <li>길이<span>86.9m</span></li>
+                                        <li>건조일<span>2006-05-16</span></li>
+                                    </ul>
+                                </li>
+                                <li class="toggle__menu">
+                                    <a href="#"><span class="material-symbols-outlined">fact_check</span>검사정보<span class="material-symbols-outlined">keyboard_control_key</span></a>
+                                    <ul>
+                                        <li>최종검사정보<span>제2종 중간검사</span></li>
+                                        <li>최종검사일<span>2021-05-28</span></li>
+                                        <li>차기검사정보<span>정기검사</span></li>
+                                        <li>차기검사일<span>2021-05-28</span></li>
+                                        <li>검사기관<span>한국선급</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 로딩 중 -->
+        <div class="loader">
+            <div class="loader__box">
+                <div class="loader__circle">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:5;"></span>
+                    <span style="--i:6;"></span>
+                    <span style="--i:7;"></span>
+                    <span style="--i:8;"></span>
+                    <span style="--i:9;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:20;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
