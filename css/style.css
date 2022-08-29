@@ -570,7 +570,7 @@ tr:nth-child(even) {
     background-color: #1c273e;
     border-radius: 20px;
     height: 810px;
-    overflow: scroll;
+    overflow-y: scroll;
     position: relative;
 }
 
