@@ -1114,3 +1114,67 @@ tr:nth-child(even) {
 .folding .contents_box .right .folding_img .unit__info div span {
     font-size: 20px;
 }
+
+
+/* dashboard All */
+.dashboard_all {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #1c263d;
+}
+
+.dashboard_all h3 {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    left: 15px;
+    top: 10%;
+}
+
+.dashboard_all .dashboard_all_box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  
+}
+
+.dashboard_all .dashboard_all_box .dashboard_all_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard_all .dashboard_all_box .dashboard_all_top div {
+    width: 33.3%;
+}
+
+.dashboard_all .dashboard_all_box .dashboard_all_top div:hover {
+    border: 3px solid #fff;
+    transition: .7s;
+}
+
+.dashboard_all .dashboard_all_box .dashboard_all_top div img {
+    width: 100%;
+}
+
+.dashboard_all .dashboard_all_box .dashboard_all_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard_all .dashboard_all_box .dashboard_all_bottom div {
+    width: 33.3%;
+}
+
+.dashboard_all .dashboard_all_box .dashboard_all_bottom div:hover {
+    border: 3px solid #fff;
+    transition: .7s;
+}
+
+.dashboard_all .dashboard_all_box .dashboard_all_bottom div img {
+    width: 100%;
+}
